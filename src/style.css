@@ -1,0 +1,143 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Kosugi+Maru&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hachi Maru Pop", "Kosugi Maru", "Hiragino Maru Gothic ProN",
+    "MS Pゴシック", "MS PGothic", sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #7a4a63;
+  background-color: #ffe6f2;
+  background-image: repeating-linear-gradient(
+      45deg,
+      #ffd7ec 0px,
+      #ffd7ec 2px,
+      transparent 2px,
+      transparent 14px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      #ffeef7 0px,
+      #ffeef7 2px,
+      transparent 2px,
+      transparent 14px
+    );
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  background: #fffafd;
+  border: 3px dashed #ff9ecb;
+  border-radius: 18px;
+  box-shadow:
+    0 0 0 1px #fff inset,
+    4px 4px 0 rgba(255, 158, 203, 0.35);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 22px;
+  color: #ff5fa2;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+
+h1::before,
+h1::after {
+  content: "♡";
+  color: #ffb6d9;
+  margin: 0 8px;
+}
+
+p {
+  color: #a3607e;
+  margin-bottom: 16px;
+}
+
+a {
+  color: #ff5fa2;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #c96fae;
+}
+
+a:hover {
+  color: #ff8fc0;
+}
+
+.buttons {
+  margin: 20px 0 8px;
+}
+
+button {
+  font-family: inherit;
+  font-size: 15px;
+  color: #ffffff;
+  background: linear-gradient(180deg, #ffb6d9 0%, #ff8fc0 100%);
+  border: 2px solid #ff5fa2;
+  border-radius: 999px;
+  padding: 8px 24px;
+  margin: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 0 #e8579f;
+}
+
+button:hover {
+  background: linear-gradient(180deg, #ffc9e2 0%, #ff9ecb 100%);
+}
+
+button:active {
+  box-shadow: 0 1px 0 #e8579f;
+  transform: translateY(2px);
+}
+
+.blink {
+  animation: blink 1.2s steps(1) infinite;
+  color: #ff8fc0;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.blink::before,
+.blink::after {
+  content: "♡";
+  margin: 0 6px;
+}
+
+.blink.star::before,
+.blink.star::after {
+  content: "☆彡";
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.footer {
+  margin-top: 24px;
+  font-size: 11px;
+  color: #d69dbb;
+}
+
+.footer::before,
+.footer::after {
+  content: "♡";
+  margin: 0 6px;
+}
