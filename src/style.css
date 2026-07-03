@@ -108,6 +108,33 @@ button:active {
   transform: translateY(2px);
 }
 
+.share-btn {
+  display: inline-block;
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  background: linear-gradient(180deg, #6ec6ff 0%, #1da1f2 100%);
+  border: 2px solid #0d8ddb;
+  border-radius: 999px;
+  padding: 8px 24px;
+  margin: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 0 #0d8ddb;
+}
+
+.share-btn:visited {
+  color: #ffffff;
+}
+
+.share-btn:hover {
+  background: linear-gradient(180deg, #8ad2ff 0%, #3db2f5 100%);
+}
+
+.share-btn:active {
+  box-shadow: 0 1px 0 #0d8ddb;
+  transform: translateY(2px);
+}
+
 .blink {
   animation: blink 1.2s steps(1) infinite;
   color: #ff8fc0;

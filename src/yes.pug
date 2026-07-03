@@ -12,5 +12,11 @@ html(lang="ja")
       p.blink.star congratulations
       h1 おめでとう！
       p あなたはろりこんとして認定されました！
+      .buttons
+        a.share-btn(
+          href=`https://twitter.com/intent/tweet?text=${encodeURIComponent("あなたはろりこんですか？私はろりこんとして認定されました！")}&url=${encodeURIComponent("https://www.lolicon.sx/")}&hashtags=${encodeURIComponent("ろりこんsx")}`,
+          target="_blank",
+          rel="noopener noreferrer"
+        ) 結果をポストする
       a(href="/") トップへ
       +footer
