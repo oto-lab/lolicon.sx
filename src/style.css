@@ -8,13 +8,15 @@
 }
 
 body {
-  font-family: "Hachi Maru Pop", "Kosugi Maru", "Hiragino Maru Gothic ProN",
+  font-family:
+    "Hachi Maru Pop", "Kosugi Maru", "Hiragino Maru Gothic ProN",
     "MS Pゴシック", "MS PGothic", sans-serif;
   font-size: 15px;
   line-height: 1.8;
   color: #7a4a63;
   background-color: #ffe6f2;
-  background-image: repeating-linear-gradient(
+  background-image:
+    repeating-linear-gradient(
       45deg,
       #ffd7ec 0px,
       #ffd7ec 2px,
