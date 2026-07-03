@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "pug src/index.pug src/yes.pug src/no.pug --out docs && node scripts/build.js",
-    "watch:pug": "pug src/index.pug src/yes.pug src/no.pug --out docs --watch",
+    "build": "pug src/index.pug src/yes.pug src/no.pug src/404.pug --out docs && node scripts/build.js",
+    "watch:pug": "pug src/index.pug src/yes.pug src/no.pug src/404.pug --out docs --watch",
     "watch:serve": "browser-sync start --server docs --files \"docs/**/*\"",
     "dev": "npm run build && npm-run-all --parallel watch:*",
     "format": "prettier --write ./src"
